@@ -17,16 +17,16 @@ public class Game {
         
         
         //instantiate new animals for each of the four rooms 
-        Animal patrol = new Animal("Patrol", 5); 
-        Animal towerGuardian = new Animal("Tower Guardian", 10); 
-        Animal keyKnight = new Animal("Key Knight", 15); 
-        Animal noAnimal = new Animal("nothing" , 0); 
+        Enemy fire = new Enemy("Patrol", 5); 
+        Enemy water = new Enemy("Tower Guardian", 10); 
+        Enemy poison = new Enemy("Key Knight", 15); 
+        Enemy noEnemy = new Enemy("nothing" , 0); 
         
         //instantiate new objects for each of the four rooms r0, r1, r2, r3
         Room r0 = new Room("the bottom floor", "Look inside the single treasure chest.", false, patrol); 
         Room r1 = new Room("the second floor", "What new treasure--or challenge--awaits you in this chest?", false, towerGuardian);
         Room r2 = new Room("the third floor", "The key to the final floor is in this chest, but can you defeat the Key Knight?", false, keyKnight); 
-        Room r3 = new Room("the top floor", "The treasure is yours! But is it what you expected?", true, noAnimal); 
+        Room r3 = new Room("the top floor", "The treasure is yours! But is it what you expected?", true, noEnemy); 
         
         Armour shield = new Armour("Shield", "a shield", 10); 
         Food bread = new Food("Bread", "a piece of bread", 10); 
@@ -118,7 +118,7 @@ public class Game {
     }
     
     public void getAttacked(Room playerLocation){
-        Animal animal = playerLocation.getAnimal(); 
+        Enemy enemy = playerLocation.getEnemy(); 
         int animalDamage = animal.getDamage(); 
         int playerHealth = p1.getHealth(); 
         int playerArmour = p1.getArmour(); 
