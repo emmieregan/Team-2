@@ -50,7 +50,7 @@ public class Room
     }
     
     public Enemy getEnemy(){
-        return animal; 
+        return enemy; 
     }
     
     public void setEnemy(Enemy newEnemy){
