@@ -14,15 +14,15 @@ public class Room
     private String description;
     private boolean locked;
     private Room n, e, s, w; //variables that store pointer to the doors in this room
-    private Animal animal; 
+    private Enemy enemy; 
     private ArrayList<Treasure> treasureChest; 
     
     //a new Room is created with this constructor
-    public Room (String name, String description, boolean locked, Animal animal) {
+    public Room (String name, String description, boolean locked, Enemy enemy) {
         this.name = name;
         this.description = description;
         this.locked = locked;
-        this.animal = animal; 
+        this.enemy = enemy; 
         this.treasureChest = new ArrayList<Treasure>(); 
     }
     
@@ -53,8 +53,8 @@ public class Room
         return animal; 
     }
     
-    public void setAnimal(Animal newAnimal){
-        this.animal = newAnimal; 
+    public void setEnemy(Enemy newEnemy){
+        this.enemy = newEnemy; 
     }
     
     public ArrayList<Treasure> getTreasureChest(){
