@@ -49,7 +49,7 @@ public class Room
         return w;
     }
     
-    public Animal getAnimal(){
+    public Enemy getEnemy(){
         return animal; 
     }
     
