@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=Food
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Food\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=name\ description\ healthAdded
+comment1.target=Food(java.lang.String,\ java.lang.String,\ int)
+comment2.params=
+comment2.target=int\ getHealthAdded()
+comment3.params=newHealthAdded
+comment3.target=void\ setHealthAdded(int)
+comment4.params=
+comment4.target=java.lang.String\ toString()
+numComments=5

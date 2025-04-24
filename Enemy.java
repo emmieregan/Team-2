@@ -16,7 +16,9 @@ public class Enemy {
     public int getHealth() {
         return health;
     }
-
+    public int getDamage(){
+        return baseDamage;
+    }
     public void takeDamage(int damage) {
         health -= damage;
         if (health < 0) {

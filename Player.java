@@ -1,20 +1,44 @@
 import java.util.ArrayList;
 
 public class Player {
+    private String description;
+    private String playerName;
     private int health;
+    private int maxHealth;
     private String statusEffect; // e.g., "Poisoned"
-    private ArrayList<Item> inventory;
+    private int armour; 
+    private Room location;
+    private ArrayList<Treasure> inventory;
 
-    public Player() {
-        this.health = 100;
+    public Player(int health, String statusEffect, Room location) {
+        this.health = health;
+        this.maxHealth = health;
         this.statusEffect = "None";
-        this.inventory = new ArrayList<>();
+        this.inventory = new ArrayList<Treasure>();
+        this.location = location;
+        this.armour = armour;
+        
     }
-
+    
+    public void setLocation(Room setLocation){
+        if (setLocation != null){
+           location = setLocation; 
+        }
+        else{
+            System.out.println("That doesn't exist! If there is a floor above, you can enter 'go North' to go up. If there is a floor below, you can enter 'go South' to go down."); 
+        }
+    }
+    
+    //a getter method for the location of the player
+    public Room getLocation(){
+        return location; 
+    }
     public int getHealth() {
         return health;
     }
-
+    public int getMaxHealth(){
+        return maxHealth;
+    }
     public void changeHealth(int amount) {
         health += amount;
         if (health > 100) health = 100;
@@ -45,16 +69,34 @@ public class Player {
     }
     // ^^^^ please add this to our player class 
     
+    //a setter method for the health of the player
+    public void setHealth(int setHealth){
+        health = setHealth; 
+    }
+        public int getArmour(){
+        return armour; 
+    }
     
-    public ArrayList<Item> getInventory() {
+    public void setArmour(int newArmour){
+        this.armour = newArmour; 
+    }
+    
+    public ArrayList<Treasure> getInventory() {
         return inventory;
     }
-
-    public void addItem(Item item) {
+    public boolean hasTreasure(String t){
+        for (int i = 0; i < inventory.size(); i++){
+            if ((inventory.get(i).getName()).equals(t)){
+                return true; 
+            }
+        }
+        return false; 
+    }
+    public void addTreasure(Treasure item) {
         inventory.add(item);
     }
 
-    public void dropItem(Item item) {
+    public void dropItem(Treasure item) {
         inventory.remove(item);
     }
 }

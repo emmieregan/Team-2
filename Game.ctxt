@@ -1,0 +1,26 @@
+#BlueJ class context
+comment0.target=Game
+comment0.text=\r\n\ This\ is\ the\ driver\ class\ for\ a\ text-based\ adventure\ game\ called\ "The\ Tower"\r\n\r\n\ @author\ Emmie\ Regan\ Ange\ Li\ Anisa\ Rodriguez\r\n\ @version\ Spring\ 2025\ \r\n
+comment1.params=gui
+comment1.target=Game(GameGUIAnisa)
+comment10.params=t
+comment10.target=void\ check(java.lang.String)
+comment11.params=args
+comment11.target=void\ main(java.lang.String[])
+comment2.params=gui
+comment2.target=void\ setGUI(GameGUIAnisa)
+comment3.params=
+comment3.target=Player\ getPlayer()
+comment4.params=input
+comment4.target=void\ parseCommand(java.lang.String)
+comment5.params=direction
+comment5.target=void\ movePlayer(java.lang.String)
+comment6.params=playerLocation
+comment6.target=void\ getAttacked(Room)
+comment7.params=t
+comment7.target=void\ take(java.lang.String)
+comment8.params=t
+comment8.target=void\ drop(java.lang.String)
+comment9.params=t
+comment9.target=void\ eat(java.lang.String)
+numComments=12
