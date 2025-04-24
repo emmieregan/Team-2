@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=Room
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ Room\ here.\r\n\r\n\ @author\ Ange\ Li\r\n\ @version\ Spring\ 2025\ -\ February\ 6,\ 202\r\n
+comment0.text=\n\ Write\ a\ description\ of\ class\ Room\ here.\n\n\ @author\ Ange\ Li\n\ @version\ Spring\ 2025\ -\ February\ 6,\ 202\n
 comment1.params=name\ description\ locked\ enemy\ id
 comment1.target=Room(java.lang.String,\ java.lang.String,\ boolean,\ Enemy,\ int)
 comment10.params=

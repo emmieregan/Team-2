@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=Food
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ Food\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\n\ This\ is\ the\ Food\ class\ that\ describes\ consumable\ healing\ items\ for\ the\ Game\n\n\ @author\ Ange\ Emmie\ Anisa\n\ @version\ Spring\ 2025\n
 comment1.params=name\ description\ healthAdded
 comment1.target=Food(java.lang.String,\ java.lang.String,\ int)
 comment2.params=

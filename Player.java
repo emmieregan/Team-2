@@ -92,9 +92,30 @@ public class Player {
         }
         return false; 
     }
-    public void addTreasure(Treasure item) {
-        inventory.add(item);
+    
+    public Treasure findTreasure(String t){
+        for (int i = 0; i < inventory.size(); i++){
+            if ((inventory.get(i).getName()).equals(t)){
+                return inventory.get(i); 
+            }
+        }
+        return null;
     }
+    
+    public void addTreasure(String addTreasure){
+        Treasure treasure = location.findTreasure(addTreasure);
+        if (location.containsTreasure(addTreasure)){
+            inventory.add(treasure);
+        }
+        if (treasure instanceof Armour){
+            Armour armourAdded = (Armour)treasure;
+            setArmour(armour + armourAdded.getArmourAdded());
+        }
+    }
+    
+    //public void addTreasure(Treasure item) {
+        //inventory.add(item);
+    //}
 
     public void dropItem(Treasure item) {
         inventory.remove(item);

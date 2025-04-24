@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=GameGUIAnisa
-comment0.text=\r\n\ This\ is\ the\ GUI\ for\ our\ adventure\ game\ adopted\ from\ "The\ Tower"\r\n\r\n\ @author\ Emmie\ Regan\ Ange\ Li\ Anisa\ Rodriguez\r\n\ @version\ Spring\ 2025\ \r\n
+comment0.text=\n\ This\ is\ the\ GUI\ for\ our\ adventure\ game\ adopted\ from\ "The\ Tower"\n\n\ @author\ Emmie\ Regan\ Ange\ Li\ Anisa\ Rodriguez\n\ @version\ Spring\ 2025\ \n
 comment1.params=primaryStage
 comment1.target=void\ start(javafx.stage.Stage)
 comment2.params=text

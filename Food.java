@@ -1,9 +1,9 @@
 
 /**
- * Write a description of class Food here.
+ * This is the Food class that describes consumable healing items for the Game
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author Ange Emmie Anisa
+ * @version Spring 2025
  */
 public class Food extends Treasure
 {

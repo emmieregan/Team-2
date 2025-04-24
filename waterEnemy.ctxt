@@ -1,5 +1,6 @@
 #BlueJ class context
 comment0.target=waterEnemy
+comment0.text=\n\ This\ is\ a\ water\ type\ enemy\ that\ heals\ itself\ after\ attacking\ the\ Player\n\ @\ emmie\ ange\ anisa\n\ @spring\ 2025\n
 comment1.params=name\ health\ baseDamage
 comment1.target=waterEnemy(java.lang.String,\ int,\ int)
 comment2.params=

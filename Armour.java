@@ -1,6 +1,6 @@
 
 /**
- * Write a description of class Armour here.
+ * This is the Armour class that describes items/Treasures that allow the player to resist damage more.
  *
  * @author Ange Li
  * @version Spring 2025

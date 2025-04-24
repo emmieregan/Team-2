@@ -42,10 +42,20 @@ public class GameGUIAnisa extends Application {
         descriptionArea.setPrefSize(200,300);
         descriptionArea.setWrapText(true);
         eventDescription.getChildren().addAll(descLabel, descriptionArea);
+        //descriptionArea.setText("Welcome to the Tower,treasure seeker. Can you make it to the treasure chest on the top floor?");
+        //descriptionArea.appendText("You can enter 'go North' to move up a floor and 'go South' to move down a floor.");
+        //descriptionArea.appendText("To take a treasure, enter 'take' followed by 'name of the item'");
+        //descriptionArea.appendText("To quit the game, enter 'q'.");
         descriptionArea.setText("Welcome to the Tower,treasure seeker. Can you make it to the treasure chest on the top floor?");
-        descriptionArea.appendText("You can enter 'go North' to move up a floor and 'go South' to move down a floor.");
-        descriptionArea.appendText("To take a treasure, enter 'take' followed by 'name of the item'");
-        descriptionArea.appendText("To quit the game, enter 'q'.");
+        descriptionArea.appendText("\n______________________________________________________________________________");
+        descriptionArea.appendText("\nPlayer Action Inputs are always two words and case sensitive. To play the game, enter any of the following as Player Action Input:"); 
+        descriptionArea.appendText("\n'check Stats' displays your overall stats"); 
+        descriptionArea.appendText("\n'check Health' displays your health stats' and 'check Armour' displays your armour stats"); 
+        descriptionArea.appendText("\n'go Up' moves you up a floor and 'go Down' moves you down a floor");
+        descriptionArea.appendText("\n'take' followed by 'the name of the item' (case sensitive) puts the item into your inventory");
+        descriptionArea.appendText("\n'eat' followed by 'the name of the food item' (case sensitive) allows you to eat the food item and gain the corresponding health");
+        descriptionArea.appendText("\n'q' quits the game");
+        descriptionArea.appendText("\nThere are 4 floors to the Tower and you start on the first floor. You are attacked by an enemy when you enter a new floor. "); 
         
 
         // Top Menu

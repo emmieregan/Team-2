@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=Game
-comment0.text=\r\n\ This\ is\ the\ driver\ class\ for\ a\ text-based\ adventure\ game\ called\ "The\ Tower"\r\n\r\n\ @author\ Emmie\ Regan\ Ange\ Li\ Anisa\ Rodriguez\r\n\ @version\ Spring\ 2025\ \r\n
+comment0.text=\n\ This\ is\ the\ driver\ class\ for\ a\ text-based\ adventure\ game\ called\ "The\ Tower"\n\n\ @author\ Emmie\ Regan\ Ange\ Li\ Anisa\ Rodriguez\n\ @version\ Spring\ 2025\n
 comment1.params=gui
 comment1.target=Game(GameGUIAnisa)
 comment10.params=t
